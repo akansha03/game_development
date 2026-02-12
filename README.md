@@ -7,8 +7,7 @@ The goal of this project is to demonstrate clean, object‑oriented design, sepa
 
 ## Overview
 
-- **Technology**: (Fill in based on your project – for example: Python 3.x / Java / C++ / etc.)
-- **Paradigm**: Object‑oriented design with clear responsibilities per class/module.
+- **Technology**: (Python 3.13.1)
 - **Focus areas**:
   - Clean game flow and turn management
   - Clear modelling of cards, decks, and players
@@ -130,54 +129,16 @@ The Poker implementation (for example **Texas Hold’em** – adjust if you impl
 - **Extendable rules**:
   - Betting, blinds, and multiple rounds can be layered on top of the existing structure.
 
----
-
-## How to Run the Games
-
-_Update this section to match your actual commands and entry points._
-
 ### Prerequisites
 
-- **Language runtime**: e.g. Python 3.10+ / Java 17 / etc.
-- **Dependencies**: List any external libraries or frameworks used.
-  - If you have a `requirements.txt`, `pyproject.toml`, `pom.xml`, or similar, reference it here.
+- **Language runtime**: Python 3.10+ 
 
 ### Running from the Command Line
 
 ```bash
-# Example for Python – adjust to your actual entry point
-python main.py
+python3 basics/BlackJackGame.py
+python3 basics/TexasPokerGame.py
 ```
-
-Typical flow:
-
-1. Choose which game to play (Blackjack or Poker) from a menu or command‑line argument.
-2. Follow the prompts to play rounds of the selected game.
-
-If you have separate scripts, you might run:
-
-```bash
-python blackjack_game.py
-python poker_game.py
-```
-
----
-
-## Design & Code Quality Notes (For Hiring Manager)
-
-- **Modular architecture**:
-  - Shared abstractions for cards, decks, and players minimize duplication.
-  - Game‑specific rules live in dedicated modules, making the intent of each file clear.
-- **Maintainability**:
-  - Methods and classes are named for readability.
-  - Logic is broken into small, testable units (e.g. hand evaluation, scoring).
-- **Extensibility**:
-  - New games can be added by reusing the shared card/deck layer.
-  - Existing games can be enhanced (e.g. UI, networking, betting systems) without major refactors.
-- **Testing‑friendly**:
-  - Game logic is kept separate from input/output so that key components can be unit‑tested in isolation.
-
----
 
 ## Possible Future Enhancements
 
