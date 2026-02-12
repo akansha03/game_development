@@ -20,22 +20,19 @@ The goal of this project is to demonstrate clean, object‑oriented design, sepa
 
 ## Project Structure
 
-_Adjust this section to match your actual folders and filenames._
+The project is intentionally small and focused, with just two main game files inside the `basics` folder:
 
-- **`cards/` or core module**: Shared card and deck logic.
-  - `Card` – represents a single playing card (suit, rank, value).
-  - `Deck` – creates, shuffles, and deals cards.
-- **`blackjack/`**: Blackjack‑specific logic.
-  - Game loop / controller (e.g. `blackjack_game.py`)
-  - Player and Dealer hands
-  - Blackjack rules and scoring
-- **`poker/`**: Poker‑specific logic.
-  - Game loop / controller (e.g. `poker_game.py`)
-  - Player hands and community cards (if Texas Hold’em)
-  - Hand ranking and winner evaluation
-- **`main` or launcher**: Entry point that lets you choose which game to run.
+- **`basics/BlackJackGame.py`**:  
+  - Implements the complete Blackjack game loop.  
+  - Handles deck creation, shuffling, dealing cards, player choices (Hit/Stand), dealer logic, and round outcome calculation.  
+  - Encapsulates Blackjack‑specific rules such as Ace handling and bust detection.
 
-If your structure differs, you can quickly update the names in this section, but the intent is to make it easy for a hiring manager to find the relevant code.
+- **`basics/TexasPokerGame.py`**:  
+  - Implements the Texas Hold’em style Poker game.  
+  - Manages dealing of hole cards and community cards (Flop, Turn, River).  
+  - Contains the hand evaluation and ranking logic (e.g. flush, straight, full house) and winner determination.
+
+This keeps the repository easy to navigate for reviewers: open the `basics` folder to see each game’s full implementation in a single, self‑contained file.
 
 ---
 
